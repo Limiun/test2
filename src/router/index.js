@@ -11,6 +11,7 @@ import testView1 from "../components/Main/DetailView/testView1";
 import testView2 from "../components/Main/DetailView/testView2";
 import test1 from "../components/Main/test1";
 import test2 from "../components/Main/DetailView/test2";
+import writeBlog from "../components/Main/DetailView/writeBlog";
 
 Vue.use(Router)
 
@@ -57,6 +58,11 @@ export default new Router({
           name:testView2,
           component:testView2,
         },
+        {
+          path:'/writeBlog',
+          name:writeBlog,
+          component:writeBlog,
+        },
         ]
     },
     {
@@ -69,6 +75,7 @@ export default new Router({
       name:test2,
       component:test2,
     },
+
   ],
 })
 
