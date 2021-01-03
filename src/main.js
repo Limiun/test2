@@ -8,9 +8,11 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import store from './store/index.js'
 import Vuex from 'vuex'
+import VueParticles from 'vue-particles'
 Vue.use(Vuex)
 Vue.config.productionTip = false
 Vue.use(ElementUI);
+Vue.use(VueParticles)
 Vue.prototype.$axios = axios
 /* eslint-disable no-new */
 new Vue({

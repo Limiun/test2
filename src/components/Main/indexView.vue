@@ -1,5 +1,26 @@
 <template>
-    <el-container>
+  <div>
+    <vue-particles
+      color="#000000"
+      :particleOpacity="0.7"
+      :particlesNumber="200"
+      shapeType="circle"
+      :particleSize="5"
+      linesColor="#000000"
+      :linesWidth="1"
+      :lineLinked="true"
+      :lineOpacity="0.4"
+      :linesDistance="148"
+      :moveSpeed="2"
+      :hoverEffect="true"
+      hoverMode="grab"
+      :clickEffect="true"
+      clickMode="push"
+      class="lizi"
+      style="position: absolute"
+    >
+    </vue-particles>
+    <el-container style="position: relative;">
       <el-header id="nav-fixed" :class="{nav_fixed : isFixed}">
         <el-menu :default-active="this.$route.path" class="el-menu-demo" mode="horizontal" @select="handleSelect" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
           <el-menu-item index="1"><router-link  to="/writeBlog" >首页</router-link></el-menu-item>
@@ -8,13 +29,13 @@
             <router-link  to="/testView1" ><el-menu-item index="2-1">技术博客</el-menu-item></router-link>
             <router-link  to="/testView2"> <el-menu-item index="2-2">项    目</el-menu-item></router-link>
             <router-link  to="/testView2"> <el-menu-item index="2-2">辣鸡仓库</el-menu-item></router-link>
-<!--            <el-menu-item index="2-3">选项3</el-menu-item>-->
-<!--            <el-submenu index="2-4">-->
-<!--              <template slot="title">选项4</template>-->
-<!--              <el-menu-item index="2-4-1">选项1</el-menu-item>-->
-<!--              <el-menu-item index="2-4-2">选项2</el-menu-item>-->
-<!--              <el-menu-item index="2-4-3">选项3</el-menu-item>-->
-<!--            </el-submenu>-->
+            <!--            <el-menu-item index="2-3">选项3</el-menu-item>-->
+            <!--            <el-submenu index="2-4">-->
+            <!--              <template slot="title">选项4</template>-->
+            <!--              <el-menu-item index="2-4-1">选项1</el-menu-item>-->
+            <!--              <el-menu-item index="2-4-2">选项2</el-menu-item>-->
+            <!--              <el-menu-item index="2-4-3">选项3</el-menu-item>-->
+            <!--            </el-submenu>-->
           </el-submenu>
           <el-menu-item index="3" disabled>消息中心</el-menu-item>
           <el-menu-item index="4"><a href="https://www.ele.me" target="_blank">订单管理</a></el-menu-item>
@@ -67,9 +88,10 @@
         </el-footer>
 
       </div>
-
-
     </el-container>
+
+  </div>
+
 </template>
 
 <script>
@@ -164,6 +186,10 @@
 
   #nav-fixed{
     height: 71px;
+  }
+  .lizi{
+    width: 100%;
+    height: calc(100%);
   }
   /*.el-container el-main {*/
   /*  height: 722px;*/

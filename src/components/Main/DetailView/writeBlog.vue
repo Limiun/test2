@@ -9,7 +9,7 @@
       @change="onEditorChange($event)" style="height: calc(55vh)">
     </quill-editor>
   </div>
-    <el-row class="button1"> <el-button type="primary" round>提交文档</el-button></el-row>
+    <el-row class="button1"> <el-button v-on:click="commitBlog" type="primary" round>提交文档</el-button></el-row>
   </div>
 </template>
 <script>
@@ -54,6 +54,11 @@
       onEditorBlur(){}, // 失去焦点事件
       onEditorFocus(){}, // 获得焦点事件
       onEditorChange(){}, // 内容改变事件
+      commitBlog(){
+        var cont = this.content;
+        console.log(cont);
+
+      },
     },
     computed: {
       editor() {
