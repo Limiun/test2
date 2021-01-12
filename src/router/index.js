@@ -12,6 +12,7 @@ import testView2 from "../components/Main/DetailView/testView2";
 import test1 from "../components/Main/test1";
 import test2 from "../components/Main/DetailView/test2";
 import writeBlog from "../components/Main/DetailView/writeBlog";
+import dailyDoubts from "../components/Main/DetailView/dailyDoubts";
 
 Vue.use(Router)
 
@@ -63,6 +64,11 @@ export default new Router({
           name:writeBlog,
           component:writeBlog,
         },
+        {
+          path:'/dailyDoubts',
+          name:dailyDoubts,
+          component:dailyDoubts,
+        }
         ]
     },
     {

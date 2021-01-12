@@ -19,6 +19,19 @@
           <el-menu-item index="3" disabled>消息中心</el-menu-item>
           <el-menu-item index="4"><a href="https://www.ele.me" target="_blank">订单管理</a></el-menu-item>
 
+          <el-submenu index="5">
+            <template slot="title">嘤嘤嘤</template>
+            <router-link  to="/dailyDoubts" ><el-menu-item index="5-1">每日疑惑</el-menu-item></router-link>
+            <router-link  to="/testView2"> <el-menu-item index="5-2">每日解惑</el-menu-item></router-link>
+            <router-link  to="/testView2"> <el-menu-item index="5-3">每年的需要做的小事</el-menu-item></router-link>
+            <!--            <el-menu-item index="2-3">选项3</el-menu-item>-->
+            <!--            <el-submenu index="2-4">-->
+            <!--              <template slot="title">选项4</template>-->
+            <!--              <el-menu-item index="2-4-1">选项1</el-menu-item>-->
+            <!--              <el-menu-item index="2-4-2">选项2</el-menu-item>-->
+            <!--              <el-menu-item index="2-4-3">选项3</el-menu-item>-->
+            <!--            </el-submenu>-->
+          </el-submenu>
 
           <el-row class="button">
             <el-button icon="el-icon-search" circle></el-button>
@@ -148,6 +161,10 @@
     height:calc(70vh)
   }
 
+
+  #nav-fixed{
+    height: 71px;
+  }
   /*.el-container el-main {*/
   /*  height: 722px;*/
   /*}*/
